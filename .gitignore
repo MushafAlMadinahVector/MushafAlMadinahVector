@@ -1,0 +1,4 @@
+node_modules/
+public/previews/
+public/data/pages.json
+.DS_Store

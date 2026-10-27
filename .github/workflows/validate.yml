@@ -1,0 +1,40 @@
+name: Validate website and source assets
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Check JavaScript syntax
+        run: node --check website/app.js
+
+      - name: Validate website markup
+        run: python scripts/validate-html.py
+
+      - name: Validate viewer control wiring and documentation
+        run: python scripts/validate-viewer.py
+
+      - name: Validate source page filenames and signatures
+        run: python scripts/validate-assets.py

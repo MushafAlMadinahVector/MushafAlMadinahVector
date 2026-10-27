@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A respectful, asset-safe browser for verified Mushaf Al-Madinah vector previews. King Fahd Glorious Quran Printing Complex official vector resources." />
+    <meta name="theme-color" content="#12221b" />
+    <title>Al-Madinah Vector Edition — مصحف المدينة النبوية</title>
+    
+    <!-- Google Fonts for authentic Arabic Naskh & elegant editorial serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" id="skipLink">Skip to main content</a>
+
+    <!-- Site Header -->
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Al-Madinah Vector Edition — Return to top">
+          <span class="brand-crest" aria-hidden="true">
+            <span class="crest-letter">م</span>
+          </span>
+          <div class="brand-text">
+            <span class="brand-title">Al-Madinah</span>
+            <span class="brand-subtitle" data-en="Vector Edition" data-ar="النسخة المتجهية">Vector Edition</span>
+          </div>
+        </a>
+
+        <nav class="site-nav" aria-label="Main Navigation">
+          <a href="#browser" class="nav-link" data-en="Browse Pages" data-ar="تصفح الصفحات">Browse Pages</a>
+          <a href="#principles" class="nav-link" data-en="Principles" data-ar="المبادئ">Principles</a>
+          <a href="#source" class="nav-link" data-en="Source &amp; Rights" data-ar="المصدر والحقوق">Source &amp; Rights</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="lang-toggle-btn" id="languageToggle" type="button" aria-pressed="false" aria-label="Switch interface language to Arabic">
+            <span class="lang-globe" aria-hidden="true">🌐</span>
+            <span class="lang-label">العربية</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main" tabindex="-1">
+      <!-- Hero Section -->
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <div class="hero-copy">
+            <div class="eyebrow-badge">
+              <span class="badge-dot" aria-hidden="true"></span>
+              <span class="badge-text" data-en="Authoritative Source · Preserved Fidelity" data-ar="المصدر المعتمد · أمانة تامة">Authoritative Source · Preserved Fidelity</span>
+            </div>
+            
+            <h1 id="hero-title" class="hero-heading" data-en="Mushaf Al-Madinah, in its original vector form." data-ar="مصحف المدينة النبوية بصيغته المتجهية الأصلية.">
+              Mushaf Al-Madinah, in its original vector form.
+            </h1>
+            
+            <p class="hero-lede" data-en="A quiet, technically rigorous browser for verified vector display derivatives of the official Mushaf Al-Madinah (Hafs narration). Original calligraphy remains sacred, separate, and untouched." data-ar="متصفح هادئ ودقيق فنياً للمشتقات المتجهية المتحقق منها لمصحف المدينة النبوية (رواية حفص عن عاصم). تظل الخطوط الأصلية مصونة ومنفصلة دون أي تعديل.">
+              A quiet, technically rigorous browser for verified vector display derivatives of the official Mushaf Al-Madinah (Hafs narration). Original calligraphy remains sacred, separate, and untouched.
+            </p>
+
+            <div class="hero-cta-group">
+              <a class="btn btn-primary" href="#browser" data-en="Explore Verified Pages" data-ar="استكشف الصفحات المتاحة">
+                <span class="btn-icon" aria-hidden="true">📖</span>
+                <span data-en="Explore Verified Pages" data-ar="استكشف الصفحات المتاحة">Explore Verified Pages</span>
+              </a>
+              <a class="btn btn-secondary" href="#source" data-en="Source &amp; Usage Rights" data-ar="المصدر وحقوق الاستخدام">
+                <span class="btn-icon" aria-hidden="true">📜</span>
+                <span data-en="Source &amp; Usage Rights" data-ar="المصدر وحقوق الاستخدام">Source &amp; Usage Rights</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Metrics Card -->
+          <aside class="hero-stat-card" aria-label="Mushaf Resource Summary">
+            <div class="stat-card-header">
+              <span class="stat-card-badge" data-en="Official Artwork" data-ar="الأصل المعتمد">Official Artwork</span>
+              <span class="stat-card-seal" aria-hidden="true">✦</span>
+            </div>
+            
+            <div class="stat-metric">
+              <span class="stat-number" id="heroReadyCount">—</span>
+              <span class="stat-label" data-en="Verified display pages ready" data-ar="صفحة عرض متحقق منها وجاهزة">Verified display pages ready</span>
+            </div>
+
+            <div class="stat-divider" aria-hidden="true"></div>
+
+            <ul class="stat-details">
+              <li>
+                <span class="detail-label" data-en="Narration" data-ar="الرواية">Narration</span>
+                <strong class="detail-value" data-en="Hafs from 'Asim" data-ar="حفص عن عاصم">Hafs from 'Asim</strong>
+              </li>
+              <li>
+                <span class="detail-label" data-en="Publisher" data-ar="الجهة الناشرة">Publisher</span>
+                <strong class="detail-value" data-en="KFGQPC, Al-Madinah" data-ar="مجمع الملك فهد، المدينة">KFGQPC, Al-Madinah</strong>
+              </li>
+              <li>
+                <span class="detail-label" data-en="Total Mushaf Pages" data-ar="مجموع صفحات المصحف">Total Mushaf Pages</span>
+                <strong class="detail-value" data-en="604 Pages · 30 Juz" data-ar="604 صفحات · 30 جزءاً">604 Pages · 30 Juz</strong>
+              </li>
+            </ul>
+
+            <p class="stat-note" data-en="Derived display assets are generated locally with cryptographic SHA-256 tracking." data-ar="تُولَّد أصول العرض المشتقة محلياً مع تتبع كامل لبصمة SHA-256 المشفرة.">
+              Derived display assets are generated locally with cryptographic SHA-256 tracking.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Main Browser Section -->
+      <section class="browser-section" id="browser" aria-labelledby="browser-title">
+        <div class="section-container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker" data-en="Interactive Resource Browser" data-ar="متصفح الموارد التفاعلي">Interactive Resource Browser</p>
+              <h2 id="browser-title" class="section-title" data-en="Discover &amp; Inspect Verified Pages" data-ar="استعراض الصفحات والتحقق منها">Discover &amp; Inspect Verified Pages</h2>
+            </div>
+            <div class="status-indicator-box">
+              <span class="status-pulse" aria-hidden="true"></span>
+              <span id="manifestStatus" class="status-message" role="status">Loading page manifest…</span>
+            </div>
+          </div>
+
+          <!-- Browser Workspace Layout -->
+          <div class="browser-grid" id="browserGrid">
+            <!-- Sidebar / Page Navigation Index -->
+            <aside class="browser-sidebar" aria-label="Page navigation index">
+              <!-- Search & Filter Controls -->
+              <div class="sidebar-search-box">
+                <label for="pageSearch" class="search-label" data-en="Filter by page number, Surah, or filename" data-ar="ابحث برقم الصفحة، السورة، أو اسم الملف">
+                  Filter by page, Surah, or filename
+                </label>
+                <div class="search-input-wrapper">
+                  <span class="search-icon" aria-hidden="true">🔍</span>
+                  <input id="pageSearch" type="search" inputmode="numeric" autocomplete="off" placeholder="e.g. 001, Fatihah, الفاتحة" aria-label="Filter pages by number, Surah, or filename" />
+                  <button id="clearSearch" class="clear-btn" type="button" aria-label="Clear search" hidden>✕</button>
+                </div>
+              </div>
+
+              <!-- Quick Jump & Filters -->
+              <div class="sidebar-filter-bar">
+                <div class="filter-group">
+                  <label for="juzSelect" class="filter-label" data-en="Juz" data-ar="الجزء">Juz</label>
+                  <select id="juzSelect" aria-label="Filter by Juz">
+                    <option value="" data-en="All Juz (1–30)" data-ar="جميع الأجزاء (1-30)">All Juz (1–30)</option>
+                  </select>
+                </div>
+                <div class="filter-group">
+                  <label for="surahSelect" class="filter-label" data-en="Surah" data-ar="السورة">Surah</label>
+                  <select id="surahSelect" aria-label="Filter by Surah">
+                    <option value="" data-en="All Surahs" data-ar="جميع السور">All Surahs</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Pagination Stepper -->
+              <div class="stepper-controls" aria-label="Adjacent page navigation">
+                <button id="previousPage" class="stepper-btn" type="button" aria-label="Previous Page">
+                  <span aria-hidden="true">←</span>
+                  <span data-en="Previous" data-ar="السابق">Previous</span>
+                </button>
+                <span class="stepper-indicator" id="stepperIndicator">— / —</span>
+                <button id="nextPage" class="stepper-btn" type="button" aria-label="Next Page">
+                  <span data-en="Next" data-ar="التالي">Next</span>
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+
+              <!-- Page List -->
+              <div class="page-list-container">
+                <ol id="pageList" class="page-list" aria-label="Available Quran pages" role="listbox"></ol>
+              </div>
+            </aside>
+
+            <!-- Viewer Area -->
+            <section class="browser-viewer" aria-labelledby="viewerTitle">
+              <!-- Viewer Control Toolbar -->
+              <div class="viewer-toolbar">
+                <div class="viewer-metadata">
+                  <p class="viewer-kicker" id="viewerKicker">Mushaf Al-Madinah · Hafs 39</p>
+                  <h3 id="viewerTitle" class="viewer-title">Select a page to view</h3>
+                </div>
+
+                <div class="viewer-actions">
+                  <div class="zoom-controls-group" role="group" aria-label="Zoom and View controls">
+                    <button id="zoomOut" class="tool-btn" type="button" aria-label="Zoom out" title="Zoom out (−)">
+                      <span aria-hidden="true">−</span>
+                    </button>
+                    <span id="zoomLevelDisplay" class="zoom-level-pill" aria-live="polite">100%</span>
+                    <button id="zoomIn" class="tool-btn" type="button" aria-label="Zoom in" title="Zoom in (+)">
+                      <span aria-hidden="true">+</span>
+                    </button>
+                    <button id="fitWidth" class="tool-btn text-tool" type="button" title="Fit to width (w)">
+                      <span data-en="Fit Width" data-ar="ملء العرض">Fit Width</span>
+                    </button>
+                    <button id="fitPage" class="tool-btn text-tool" type="button" title="Fit to page (p)">
+                      <span data-en="Fit Page" data-ar="ملء الصفحة">Fit Page</span>
+                    </button>
+                    <button id="resetZoom" class="tool-btn text-tool" type="button" title="Reset view (0)">
+                      <span data-en="Reset" data-ar="إعادة ضبط">Reset</span>
+                    </button>
+                    <button id="toggleFullscreen" class="tool-btn" type="button" aria-label="Toggle Fullscreen" title="Full screen (f)">
+                      <span aria-hidden="true">⛶</span>
+                    </button>
+                    <button id="inspectIntegrity" class="tool-btn text-tool highlight" type="button" title="View cryptographic checksum and source details">
+                      <span aria-hidden="true">🛡️</span>
+                      <span data-en="Integrity" data-ar="البيانات الفنية">Integrity</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Preview Stage (Interactive Pan & Zoom Surface) -->
+              <div id="stage" class="viewer-stage" tabindex="0" role="region" aria-label="Selected page preview. Drag to pan when zoomed, use + and - to zoom, arrow keys to flip pages, f for fullscreen.">
+                <!-- Empty State -->
+                <div id="emptyState" class="stage-empty-state">
+                  <div class="empty-crest" aria-hidden="true">◇</div>
+                  <h4 id="emptyHeading" data-en="No verified preview selected" data-ar="لم يتم اختيار معاينة متحقق منها">No verified preview selected</h4>
+                  <p id="emptyMessage" data-en="This viewer never fabricates or substitutes Quranic calligraphy. Select a page with a ready derivative to begin inspection." data-ar="لا يختلق هذا العارض النص القرآني أو يستبدله. اختر صفحة ذات أصل متحقق منه للبدء.">
+                    This viewer never fabricates or substitutes Quranic calligraphy. Select a page with a ready derivative to begin inspection.
+                  </p>
+                </div>
+
+                <!-- Page Rendering Canvas / Image -->
+                <div class="image-wrapper" id="imageWrapper">
+                  <img id="pageImage" class="mushaf-page-image" hidden alt="" draggable="false" />
+                </div>
+              </div>
+
+              <!-- Viewer Footer Note & Keyboard Hints -->
+              <div class="viewer-footer-bar">
+                <p class="viewer-caption" data-en="Authoritative .ai vector files remain untouched in quran-pages/. Previews are derived vector SVGs." data-ar="تظل ملفات ‎.ai المصدرية المرجعية مصونة في quran-pages/. المعاينات المعروضة مشتقات متجهية بتنسيق SVG.">
+                  Authoritative .ai vector files remain untouched in <code>quran-pages/</code>. Previews are derived vector SVGs.
+                </p>
+                <div class="keyboard-shortcuts-pill" aria-hidden="true">
+                  <span><kbd>+</kbd>/<kbd>−</kbd> Zoom</span>
+                  <span><kbd>0</kbd> Reset</span>
+                  <span><kbd>←</kbd>/<kbd>→</kbd> Navigate</span>
+                  <span><kbd>F</kbd> Fullscreen</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integrity Inspector Dialog Modal -->
+      <dialog id="integrityDialog" class="integrity-modal" aria-labelledby="integrityModalTitle">
+        <div class="modal-card">
+          <div class="modal-header">
+            <div class="modal-title-wrap">
+              <span class="modal-icon" aria-hidden="true">🛡️</span>
+              <h3 id="integrityModalTitle" data-en="Cryptographic & Source Integrity" data-ar="بيانات الأمانة الفنية والمصدر">Cryptographic &amp; Source Integrity</h3>
+            </div>
+            <button id="closeIntegrityModal" class="modal-close-btn" type="button" aria-label="Close dialog">✕</button>
+          </div>
+          <div class="modal-body">
+            <p class="modal-desc" data-en="Every displayed derivative maintains strict cryptographic traceability to its authoritative King Fahd Complex vector source file." data-ar="تحتفظ كل معاينة معروضة بتتبع مشفر دقيق لملفها المصدري الأصلي الصادر عن مجمع الملك فهد.">
+              Every displayed derivative maintains strict cryptographic traceability to its authoritative King Fahd Complex vector source file.
+            </p>
+            <dl class="meta-grid" id="integrityMetaList">
+              <!-- Populated dynamically via JS -->
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <span class="modal-audit-tag" data-en="Zero AI Generation · Verified Vectors" data-ar="لا استبدال بالذكاء الاصطناعي · متجهات موثقة">Zero AI Generation · Verified Vectors</span>
+            <button id="closeIntegrityBtn" class="btn btn-secondary" type="button" data-en="Close" data-ar="إغلاق">Close</button>
+          </div>
+        </div>
+      </dialog>
+
+      <!-- Foundational Principles Section -->
+      <section class="principles-section" id="principles" aria-labelledby="principles-title">
+        <div class="section-container">
+          <div class="principles-header">
+            <p class="section-kicker" data-en="Governing Standards" data-ar="معايير الحوكمة والعمل">Governing Standards</p>
+            <h2 id="principles-title" class="section-title" data-en="Engineering Built on Reverence &amp; Precision" data-ar="هندسة قائمة على التوقير والدقة">Engineering Built on Reverence &amp; Precision</h2>
+          </div>
+
+          <div class="principles-grid">
+            <article class="principle-card">
+              <span class="principle-number" aria-hidden="true">01</span>
+              <h3 class="principle-title" data-en="Sacred Source Fidelity" data-ar="أمانة المصدر القرآني">Sacred Source Fidelity</h3>
+              <p class="principle-text" data-en="No OCR approximations, font replacements, or AI-generated calligraphy are ever used. The official calligraphic artwork published by the Complex remains the sole authoritative visual standard." data-ar="لا يُستخدم أي تعرّف ضوئي أو استبدال للخطوط أو توليد بالذكاء الاصطناعي. تظل الخطوط الأصلية الصادرة عن المجمع هي المعيار المرئي المعتمد الوحيد.">
+                No OCR approximations, font replacements, or AI-generated calligraphy are ever used. The official calligraphic artwork published by the Complex remains the sole authoritative visual standard.
+              </p>
+            </article>
+
+            <article class="principle-card">
+              <span class="principle-number" aria-hidden="true">02</span>
+              <h3 class="principle-title" data-en="Cryptographic Traceability" data-ar="تتبع مشفر للمشتقات">Cryptographic Traceability</h3>
+              <p class="principle-text" data-en="Every preview is deterministically derived from its specific source file (NNN___Hafs39__DM.ai) and cataloged in a SHA-256 verified manifest. If an asset cannot be verified, it is never presented as complete." data-ar="تُشتق كل معاينة بصورة دقيقة من ملفها المصدري، وتُوثق في بيان معتمد بترميز SHA-256. في حال تعذر التحقق من أي أصل، لا يُعرض كصفحة مكتملة.">
+                Every preview is deterministically derived from its specific source file (<code>NNN___Hafs39__DM.ai</code>) and cataloged in a SHA-256 verified manifest. If an asset cannot be verified, it is never presented as complete.
+              </p>
+            </article>
+
+            <article class="principle-card">
+              <span class="principle-number" aria-hidden="true">03</span>
+              <h3 class="principle-title" data-en="Respectful Governance" data-ar="حوكمة محترمة وحقوق واضحة">Respectful Governance</h3>
+              <p class="principle-text" data-en="Source rights belong exclusively to the King Fahd Glorious Quran Printing Complex. Frontend code licensing is strictly separated from sacred artwork rights, preserving official terms and attribution without ambiguity." data-ar="تعود حقوق الأعمال الأصلية حصراً لمجمع الملك فهد لطباعة المصحف الشريف. يتم فصل تراخيص برمجيات الواجهة عن حقوق الخطوط الشريفة بكل وضوح.">
+                Source rights belong exclusively to the King Fahd Glorious Quran Printing Complex. Frontend code licensing is strictly separated from sacred artwork rights, preserving official terms and attribution without ambiguity.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Source, Attribution & Rights Section -->
+      <section class="source-section" id="source" aria-labelledby="source-title">
+        <div class="section-container">
+          <div class="source-card">
+            <div class="source-crest" aria-hidden="true">﷽</div>
+            <p class="section-kicker" data-en="Attribution &amp; Usage Governance" data-ar="الإسناد وحقوق الاستخدام">Attribution &amp; Usage Governance</p>
+            <h2 id="source-title" class="source-heading" data-en="Original artwork belongs to the King Fahd Glorious Quran Printing Complex." data-ar="الأعمال الأصلية ملك لمجمع الملك فهد لطباعة المصحف الشريف.">
+              Original artwork belongs to the King Fahd Glorious Quran Printing Complex.
+            </h2>
+            <p class="source-p" data-en="The original Mushaf Al-Madinah vector artwork is published by the King Fahd Glorious Quran Printing Complex (KFGQPC), Al-Madinah Al-Munawwarah, Kingdom of Saudi Arabia. This independent open-source frontend is not an official Complex product and does not claim official affiliation or endorsement." data-ar="العمل الفني المتجهي الأصلي لمصحف المدينة النبوية صادر عن مجمع الملك فهد لطباعة المصحف الشريف بالمدينة المنورة. هذه الواجهة المستقلة مفتوحة المصدر ليست منتجاً رسمياً للمجمع ولا تدّعي التأييد أو التمثيل الرسمي.">
+              The original Mushaf Al-Madinah vector artwork is published by the King Fahd Glorious Quran Printing Complex (KFGQPC), Al-Madinah Al-Munawwarah, Kingdom of Saudi Arabia. This independent open-source frontend is not an official Complex product and does not claim official affiliation or endorsement.
+            </p>
+            <p class="source-p" data-en="Under the official usage rights published by KFGQPC, this digital copy may be used free of charge across personal, institutional, desktop publishing, web, software, and paper printing contexts. Commercial physical printing and import for commercial sale within the Kingdom remain subject to specific Royal Decrees." data-ar="وفق حقوق الاستخدام المعلنة من المجمع، يُتاح استخدام هذه النسخة الرقمية مجاناً في المجالات الشخصية، والمؤسسية، والنشر المكتبي، وتطبيقات الويب والبرمجيات، والطباعة. وتخضع طباعة المصاحف الورقية لأغراض البيع التجاري داخل المملكة لأنظمة خاصة.">
+              Under the official usage rights published by KFGQPC, this digital copy may be used free of charge across personal, institutional, desktop publishing, web, software, and paper printing contexts. Commercial physical printing and import for commercial sale within the Kingdom remain subject to specific Royal Decrees.
+            </p>
+
+            <div class="source-links-row">
+              <a class="source-link-pill" href="https://dm.qurancomplex.gov.sa/" target="_blank" rel="noreferrer">
+                <span>🌐</span>
+                <span data-en="Official KFGQPC Portal" data-ar="بوابة المجمع الرسمية">Official KFGQPC Portal</span>
+              </a>
+              <a class="source-link-pill" href="https://dm.qurancomplex.gov.sa/rights/" target="_blank" rel="noreferrer">
+                <span>⚖️</span>
+                <span data-en="Official Usage Terms" data-ar="شروط الاستخدام الرسمية">Official Usage Terms</span>
+              </a>
+              <a class="source-link-pill" href="https://github.com/MushafAlMadinahVector/MushafAlMadinahVector" target="_blank" rel="noreferrer">
+                <span>📦</span>
+                <span data-en="Upstream Artwork Repository" data-ar="مستودع الأصول المرجعي">Upstream Artwork Repository</span>
+              </a>
+              <a class="source-link-pill" href="LICENSE" target="_blank">
+                <span>📄</span>
+                <span data-en="Repository LICENSE Notice" data-ar="إشعار الترخيص بالمستودع">Repository LICENSE Notice</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-mark" aria-hidden="true">م</span>
+          <span class="footer-title">Al-Madinah Vector Edition</span>
+        </div>
+        <p class="footer-tagline" data-en="Independent, asset-safe digital browser for verified Quranic vector derivatives." data-ar="واجهة رقمية مستقلة وآمنة لاستعراض المشتقات المتجهية المتحقق منها.">
+          Independent, asset-safe digital browser for verified Quranic vector derivatives.
+        </p>
+        <p class="footer-credit">
+          <span data-en="Calligraphy © King Fahd Glorious Quran Printing Complex." data-ar="الخطوط الشريفة © مجمع الملك فهد لطباعة المصحف الشريف.">Calligraphy © King Fahd Glorious Quran Printing Complex.</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Main Logic Script -->
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,50 +1,57 @@
-LICENSE
+SCOPE CLARIFICATION FOR THIS REPOSITORY
 
-All files in this repository are the intellectual property of the
-King Fahd Glorious Quran Printing Complex (KFGQPC),
-Al-Madinah Al-Munawwarah, Kingdom of Saudi Arabia.
+This notice records the usage terms and ownership attribution for the original
+Mushaf vector artwork in the quran-pages/ directory. It does not assign
+ownership of independently authored website source code to KFGQPC. The website
+code is addressed separately in website/LICENSE. Third-party dependencies and
+other assets, if added, remain subject to their own terms.
 
-جميع الملفات في هذا المستودع هي ملكية فكرية لمجمع الملك فهد
-لطباعة المصحف الشريف، المدينة المنورة، المملكة العربية السعودية.
+ORIGINAL SOURCE ARTWORK — OWNERSHIP / الملكية
+
+The original files in quran-pages/ are attributed to the King Fahd Glorious
+Quran Printing Complex (KFGQPC), Al-Madinah Al-Munawwarah, Kingdom of Saudi
+Arabia. All intellectual-property rights in the original Mushaf artwork remain
+with the Complex.
+
+جميع الحقوق الفكرية للملفات الأصلية لمصحف المدينة النبوية في مجلد quran-pages/
+تعود إلى مجمع الملك فهد لطباعة المصحف الشريف، المدينة المنورة، المملكة العربية
+السعودية.
 
 USAGE TERMS / شروط الاستخدام
-──────────────────────────────
 
-Per the official usage rights published by KFGQPC, this digital copy
-may be used free of charge for personal use, government and private
-institutions, paper printing, media and desktop publishing, websites,
-computer programs, and other purposes, both inside and outside the
-Kingdom of Saudi Arabia.
+The Complex's official usage-rights page states that its digital vector copy
+may be used free of charge in a range of personal, institutional, publishing,
+website, and software contexts, inside and outside the Kingdom of Saudi Arabia.
+Consult the official page for the complete, current terms:
+https://dm.qurancomplex.gov.sa/rights/
 
-بناءً على حقوق الاستخدام المعلنة رسميًا من المجمع، يمكن استخدام
-هذه النسخة الرقمية مجانًا في المجالات الشخصية والأعمال الفردية
-كافة، وأعمال الجهات الحكومية والخاصة والأهلية، وأعمال الطباعة
-الورقية، والنشر المكتبي والإعلامي، ومواقع الإنترنت والبرامج
-الحاسوبية وغيرها، داخل المملكة العربية السعودية وخارجها.
+بناءً على حقوق الاستخدام المنشورة رسمياً من المجمع، يمكن استخدام النسخة الرقمية
+في مجالات شخصية ومؤسسية وإعلامية وبرمجية وغيرها وفق الشروط المعلنة. يرجى الرجوع
+إلى صفحة حقوق الاستخدام الرسمية للاطلاع على النص الكامل والمحدّث:
+https://dm.qurancomplex.gov.sa/rights/
 
 RESTRICTIONS / القيود
-──────────────────────
 
-- The content of the Quran text must not be modified or altered.
-- Commercial printing of physical Mushaf copies within the Kingdom of
-  Saudi Arabia, or importing them from abroad for commercial sale, is
-  subject to specific Royal Decrees.
+- This repository preserves the original Quranic artwork. Do not modify,
+  replace, or reconstruct its Quranic content as part of this project.
+- Commercial printing of physical Mushaf copies within the Kingdom of Saudi
+  Arabia, and importing such copies from abroad for commercial sale, are
+  subject to specific Saudi regulations. Consult the official terms.
+- The Complex states that it is not responsible for technical or programming
+  errors resulting from use of its digital copy.
 
-- لا يجوز تعديل أو تغيير محتوى النص القرآني.
-- أعمال طباعة المصاحف الورقية لأغراض البيع التجاري داخل المملكة
-  أو استيرادها من الخارج تخضع لأنظمة خاصة.
-
-DISCLAIMER / إخلاء مسؤولية
-────────────────────────────
-
-The Complex is not responsible for any technical or programming errors
-resulting from the use of this digital copy.
-
-المجمع غير مسؤول عن الأخطاء الفنية أو البرمجية التي تحدث من
-استخدام النسخة المذكورة.
+- يحافظ هذا المستودع على الرسوم الأصلية للمصحف، ولا يجوز تعديل محتوى القرآن
+  الكريم أو استبداله أو إعادة إنشائه ضمن هذا المشروع.
+- تخضع طباعة المصاحف الورقية داخل المملكة واستيرادها من الخارج لغرض البيع التجاري
+  لأنظمة محددة؛ يرجى مراجعة الشروط الرسمية.
+- يوضح المجمع أنه غير مسؤول عن الأخطاء الفنية أو البرمجية الناتجة عن استخدام
+  النسخة الرقمية.
 
 OFFICIAL SOURCE / المصدر الرسمي
-────────────────────────────────
 
 Website: https://dm.qurancomplex.gov.sa/
-Usage Rights: https://dm.qurancomplex.gov.sa/rights/
+Usage rights: https://dm.qurancomplex.gov.sa/rights/
+
+This file is a repository-level rights notice, not a substitute for the official
+terms or legal advice. The separate website code license does not license the
+original Mushaf artwork.

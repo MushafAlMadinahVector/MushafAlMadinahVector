@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="An independent, carefully designed viewer for the Mushaf Al-Madinah vector edition in the Hafs narration, with direct access to original source artwork.">
+  <meta property="og:title" content="Al-Madinah — Vector Edition">
+  <meta property="og:description" content="A considered digital experience for exploring the original Mushaf Al-Madinah vector pages.">
+  <meta property="og:type" content="website">
+  <title>Al-Madinah — Vector Edition</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Noto+Naskh+Arabic:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#viewer">Skip to page viewer</a>
+
+  <div class="announcement">
+    <div class="announcement-inner">
+      <span class="announcement-dot" aria-hidden="true"></span>
+      <span>An independent viewer for the original Mushaf Al-Madinah vector edition</span>
+      <a href="https://dm.qurancomplex.gov.sa/rights/" target="_blank" rel="noopener noreferrer">Usage rights <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Al-Madinah Vector Edition home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M24 3.5 28.9 12l9.6 2.6-5.2 8.1 1.4 9.8-9.7-1.8-5 2.8-5-2.8-9.7 1.8 1.4-9.8-5.2-8.1 9.6-2.6L24 3.5Z" fill="none" stroke="currentColor" stroke-width="1.15"/>
+            <path d="M17 15.5c2.4-1.3 4.8-1.4 7 0v15c-2.2-1.4-4.6-1.3-7 0v-15Zm14 0c-2.4-1.3-4.8-1.4-7 0v15c2.2-1.4 4.6-1.3 7 0v-15Z" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">AL-MADINAH</span>
+          <span class="brand-subtitle">VECTOR EDITION <span aria-hidden="true">·</span> HAFS</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#viewer">Viewer</a>
+        <a href="#browse">Browse pages</a>
+        <a href="#about">About the source</a>
+        <a class="nav-source" href="https://dm.qurancomplex.gov.sa/" target="_blank" rel="noopener noreferrer">Official source <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-grid page-container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A DIGITAL VECTOR RESOURCE</div>
+          <h1 id="hero-title">A timeless page.<br><em>Preserved in its original form.</em></h1>
+          <p class="hero-description">Explore the Mushaf Al-Madinah vector edition through a quiet, carefully crafted digital viewer. The original page artwork remains the source of truth; this interface simply makes it easier to navigate and preview.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#viewer">Explore the pages <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="https://dm.qurancomplex.gov.sa/" target="_blank" rel="noopener noreferrer">Visit official source <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-symbol" aria-hidden="true">✳</span>
+            <p><strong>Made for careful viewing.</strong><br>Original artwork is served without changing its Quranic content.</p>
+          </div>
+        </div>
+
+        <section class="viewer-card reveal" id="viewer" aria-labelledby="viewer-heading">
+          <div class="viewer-topbar">
+            <div class="viewer-top-copy">
+              <span class="viewer-kicker">THE PAGE VIEWER</span>
+              <h2 id="viewer-heading">Mushaf page</h2>
+            </div>
+            <div class="page-counter"><span class="counter-dot" aria-hidden="true"></span><span id="counter-label">PAGE 001 <span aria-hidden="true">/</span> 604</span></div>
+          </div>
+
+          <div class="page-stage-shell" id="page-stage-shell">
+            <div class="page-stage" id="page-stage" tabindex="0" role="region" aria-label="Selected Mushaf page. Use arrow keys to navigate, plus and minus to zoom, and drag when zoomed.">
+              <div class="page-placeholder" id="page-placeholder">
+                <span class="placeholder-mark" aria-hidden="true">۞</span>
+                <span class="placeholder-title">Preparing the page</span>
+                <span class="placeholder-subtitle">Loading the original vector artwork…</span>
+              </div>
+              <canvas class="page-canvas is-active" id="page-canvas-a" aria-label="Rendered preview of the selected original Mushaf page"></canvas>
+              <canvas class="page-canvas" id="page-canvas-b" aria-label="Rendered preview of the selected original Mushaf page" aria-hidden="true"></canvas>
+              <div class="preview-error" id="preview-error" hidden>
+                <span class="error-symbol" aria-hidden="true">—</span>
+                <strong>Preview unavailable</strong>
+                <p>The browser could not render this source file. The original artwork is still available.</p>
+                <button class="button button-primary retry-button" id="retry-page" type="button" data-page="1">Try again</button>
+                <a id="error-source-link" href="https://github.com/kausikhussain/Al-Madinah/tree/main/quran-pages" target="_blank" rel="noopener noreferrer">Open original page ↗</a>
+              </div>
+            </div>
+            <div class="stage-caption"><span id="stage-status" role="status" aria-live="polite">Preparing page 001…</span><span>ORIGINAL VECTOR SOURCE</span></div>
+          </div>
+
+          <div class="viewer-controls" aria-label="Page navigation controls">
+            <button class="icon-button" id="page-prev" type="button" aria-label="Previous page" disabled>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5-7 7 7 7"/></svg>
+            </button>
+            <form class="page-jump-form" id="viewer-jump-form">
+              <label for="viewer-page-number">PAGE</label>
+              <input id="viewer-page-number" name="page" type="number" min="1" max="604" value="1" inputmode="numeric" aria-label="Go to page number from 1 to 604">
+              <span class="page-total">/ 604</span>
+              <button type="submit" class="small-go">Go</button>
+            </form>
+            <button class="icon-button" id="page-next" type="button" aria-label="Next page">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"/></svg>
+            </button>
+            <span class="control-divider" aria-hidden="true"></span>
+            <div class="zoom-control-group" role="group" aria-label="Page zoom controls">
+              <button class="icon-button utility-button" id="zoom-out" type="button" aria-label="Zoom out" title="Zoom out" disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg>
+              </button>
+              <output id="zoom-level" class="zoom-level" aria-live="polite">100%</output>
+              <button class="icon-button utility-button" id="zoom-in" type="button" aria-label="Zoom in" title="Zoom in" disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+              <button class="zoom-reset-button" id="zoom-reset" type="button" aria-label="Reset zoom and position" title="Fit page to viewer" disabled>Fit</button>
+            </div>
+            <span class="control-divider" aria-hidden="true"></span>
+            <button class="icon-button utility-button" id="fullscreen-button" type="button" aria-label="Open page preview fullscreen" title="Fullscreen">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H4v4M16 4h4v4M4 16v4h4M20 16v4h-4"/></svg>
+            </button>
+            <button class="icon-button utility-button" id="share-page-button" type="button" aria-label="Copy a shareable link to the current page" title="Share current page">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13.5 14 9.5M8.5 15.5l-1.2 1.2a3.5 3.5 0 0 1-5-5l4-4a3.5 3.5 0 0 1 5 0M15.5 8.5l1.2-1.2a3.5 3.5 0 0 1 5 5l-4 4a3.5 3.5 0 0 1-5 0"/></svg>
+            </button>
+            <button class="icon-button utility-button" id="export-button" type="button" aria-label="Export current preview as PNG" title="Export preview as PNG" disabled>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 17v3h14v-3"/></svg>
+            </button>
+          </div>
+          <div class="viewer-bottomline">
+            <div class="format-note"><span class="format-icon" aria-hidden="true">AI</span><span><strong>Original artwork</strong><small>Adobe Illustrator source</small></span></div>
+            <a class="download-link" id="download-source" href="https://github.com/kausikhussain/Al-Madinah/tree/main/quran-pages" target="_blank" rel="noopener noreferrer">Get original file <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+      </div>
+      <div class="hero-decoration hero-decoration-one" aria-hidden="true"></div>
+      <div class="hero-decoration hero-decoration-two" aria-hidden="true"></div>
+    </section>
+
+    <section class="facts-strip" aria-label="Collection facts">
+      <div class="facts-inner page-container">
+        <div class="fact"><span class="fact-number">604</span><span class="fact-label">Page files in this edition</span></div>
+        <div class="fact-divider" aria-hidden="true"></div>
+        <div class="fact"><span class="fact-number">Hafs</span><span class="fact-label">Narration represented in the source files</span></div>
+        <div class="fact-divider" aria-hidden="true"></div>
+        <div class="fact"><span class="fact-number">Vector</span><span class="fact-label">Original AI artwork, preserved separately</span></div>
+      </div>
+    </section>
+
+    <section class="browse-section section-space" id="browse" aria-labelledby="browse-title">
+      <div class="page-container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> FIND YOUR PAGE</div>
+            <h2 id="browse-title">Move through the collection<br><em>at your own pace.</em></h2>
+          </div>
+          <p>Jump directly to a page number or use the index below. Each selection loads its corresponding original vector file into the viewer.</p>
+        </div>
+
+        <div class="browse-tools reveal">
+          <form class="browse-jump-form" id="browse-jump-form">
+            <label for="browse-page-number">Go to a page</label>
+            <div class="browse-input-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7.2"/><path d="m16.5 16.5 4 4"/></svg>
+              <input id="browse-page-number" type="number" min="1" max="604" placeholder="Enter page number (1–604)" inputmode="numeric">
+              <button type="submit">Open page <span aria-hidden="true">→</span></button>
+            </div>
+          </form>
+          <div class="index-meta"><span class="index-dot" aria-hidden="true"></span><span id="index-range-label">Pages 001–024 of 604</span></div>
+        </div>
+
+        <div class="recent-pages" id="recent-pages" hidden>
+          <div class="recent-pages-heading"><span>CONTINUE EXPLORING</span><small>Stored only in this browser</small></div>
+          <div class="recent-page-list" id="recent-page-list" aria-label="Recently viewed pages"></div>
+        </div>
+
+        <div class="page-index-grid reveal" id="page-index-grid" aria-label="Page number index"></div>
+        <div class="pagination-row">
+          <button type="button" class="pagination-button" id="index-prev" disabled><span aria-hidden="true">←</span> Previous range</button>
+          <span class="pagination-current" id="index-page-label">INDEX 01 / 26</span>
+          <button type="button" class="pagination-button" id="index-next">Next range <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles-section section-space" aria-labelledby="principles-title">
+      <div class="page-container">
+        <div class="principles-intro reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A CAREFUL INTERFACE</div>
+          <h2 id="principles-title">The experience is new.<br><em>The source stays true.</em></h2>
+        </div>
+        <div class="principles-grid">
+          <article class="principle-card reveal">
+            <span class="principle-number">01</span>
+            <div class="principle-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 5.5h20l8 8V42H10z"/><path d="M30 5.5v8h8M16 22h16M16 28h16M16 34h10"/></svg></div>
+            <h3>Source-first by design</h3>
+            <p>The viewer reads the original, page-specific AI file. The artwork is not recreated or edited to suit the interface.</p>
+          </article>
+          <article class="principle-card reveal">
+            <span class="principle-number">02</span>
+            <div class="principle-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="2"/><path d="M14 14h20v20H14zM14 24h20M24 14v20"/></svg></div>
+            <h3>Vector source, browser preview</h3>
+            <p>Pages are rendered for convenient on-screen viewing. Use the original AI file when the vector source itself is needed.</p>
+          </article>
+          <article class="principle-card reveal">
+            <span class="principle-number">03</span>
+            <div class="principle-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 5 40 14v20L24 43 8 34V14z"/><path d="m16 24 5 5 11-12"/></svg></div>
+            <h3>Clear source and rights</h3>
+            <p>Ownership, official source links, and the usage-rights page remain visible so the material is not confused with original work by this interface.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="source-section" id="about" aria-labelledby="source-title">
+      <div class="source-inner page-container reveal">
+        <div class="source-emblem" aria-hidden="true">
+          <svg viewBox="0 0 90 90"><path d="M45 6 54 21l18 5-10 15 3 18-20-4-20 4 3-18L18 26l18-5z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M34 28c4-2 7-2 11 0v27c-4-2-7-2-11 0zM56 28c-4-2-7-2-11 0v27c4-2 7-2 11 0z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        </div>
+        <div class="source-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> SOURCE & ATTRIBUTION</div>
+          <h2 id="source-title">Rooted in the original source.</h2>
+          <p>The vector pages are attributed to the <strong>King Fahd Glorious Quran Printing Complex</strong>, Al-Madinah Al-Munawwarah. This repository provides an independent interface for navigating and previewing the source files; it is not an official Complex website and does not imply endorsement.</p>
+          <div class="source-actions">
+            <a class="button button-light" href="https://dm.qurancomplex.gov.sa/" target="_blank" rel="noopener noreferrer">Official website <span aria-hidden="true">↗</span></a>
+            <a class="source-text-link" href="https://dm.qurancomplex.gov.sa/rights/" target="_blank" rel="noopener noreferrer">Read official usage rights <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="source-meta">
+          <span>OFFICIAL PUBLISHER</span>
+          <strong>King Fahd Glorious Quran Printing Complex</strong>
+          <span class="arabic-source" lang="ar" dir="rtl">مجمع الملك فهد لطباعة المصحف الشريف</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner page-container">
+      <a class="footer-brand" href="#top">AL-MADINAH <span>VECTOR EDITION</span></a>
+      <p>An independent community-built viewer. Original Mushaf artwork remains attributed to its publisher and subject to the applicable usage terms.</p>
+      <div class="footer-links"><a href="https://github.com/kausikhussain/Al-Madinah" target="_blank" rel="noopener noreferrer">Repository ↗</a><a href="https://dm.qurancomplex.gov.sa/rights/" target="_blank" rel="noopener noreferrer">Usage rights ↗</a></div>
+    </div>
+    <div class="footer-bottom page-container"><span>Designed for clarity. Built with care.</span><span>Arabic content and original artwork are presented without intentional alteration.</span></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
